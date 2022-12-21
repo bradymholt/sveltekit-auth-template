@@ -10,9 +10,3 @@ A SvelteKit / Cloudflare Pages template demonstrating authentication
 ## Reference
 
 - Find packages that work on Workers - https://workers.cloudflare.com/works
-
-## Logs
-
-```
-wrangler pages deployment tail --project-name svelte-auth
-```
