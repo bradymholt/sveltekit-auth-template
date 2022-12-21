@@ -1,15 +1,15 @@
-@import './minireset.css';
+@import "./minireset.css";
 
 :root {
-  --font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif
+  --font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
   --background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
-  --max-width: 1024px;	
+  --max-width: 1024px;
 }
 
 body {
   font-family: var(--font-family);
   background: var(--background);
-  color: #ffffff;	
+  color: #ffffff;
   font-size: 18px;
 }
 
@@ -66,13 +66,13 @@ form {
     padding: 10px;
     width: 100%;
 
-    &.invalid{
+    &.invalid {
       border-color: #e53e3e;
     }
   }
 
   span.invalid {
-    color: #e53e3e;		
+    color: #e53e3e;
   }
 
   h1 {
@@ -87,7 +87,7 @@ form {
   }
 }
 
-button {	
+button {
   background-color: #2463eb;
   padding: 10px;
   border-radius: 10px;
@@ -107,10 +107,10 @@ button {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #ffffff;
-  color: black;	
+  color: black;
   margin: 0 auto;
 
   a {
-    color: #0000EE;
+    color: #0000ee;
   }
 }
