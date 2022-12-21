@@ -1,26 +1,15 @@
-# create-svelte
+# sveltekit-auth-template
 
-## Testing locally with Cloudflare KV support
+A SvelteKit / Cloudflare Pages template demonstrating authentication
 
-The `@sveltejs/adapter-cloudflare` adapter only provides `platform.env`, needed for KV access in production builds. So, we can run `build watch` in conjunction with `wrangler pages dev` to test the app with KV support locally. But, this disabled dev time support including HMR.
+## Commands:
 
-Run:
+- `npm run deploy` - Deploy to Cloudflare Pages
+- `npm run logs` - Tail Cloudflare Worker logs from latest production deployment
 
-```
-npx concurrently "wrangler pages dev .svelte-kit/cloudflare --kv AUTH" "npx vite build --watch"
-```
+## Reference
 
-Navigate to: http://127.0.0.1:8788/
-
-## Publishing to Cloudflare Pages
-
-```
-npm run build && wrangler pages publish .svelte-kit/cloudflare
-```
-
-## Find packages that work on Workers
-
-https://workers.cloudflare.com/works
+- Find packages that work on Workers - https://workers.cloudflare.com/works
 
 ## Logs
 
