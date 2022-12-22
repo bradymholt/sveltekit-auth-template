@@ -2,6 +2,8 @@
 
 A SvelteKit / Cloudflare Pages template demonstrating authentication
 
+<img width="1110" alt="2022_12_22T15 41 31Z@2x" src="https://user-images.githubusercontent.com/759811/209170157-1727fb7f-fe86-410c-b470-0054c4e19ba2.png">
+
 ## Commands:
 
 - `npm run deploy` - Deploy to Cloudflare Pages
