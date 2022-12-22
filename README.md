@@ -9,6 +9,7 @@ A SvelteKit / Cloudflare Pages template demonstrating authentication
 - Authentication: register, login, logout, forgot password flow
 - Deployed to Cloudflare Pages
 - Uses Cloudflare KV for key/value storage
+- Sends email with MailChannels
 
 ## Commands:
 
