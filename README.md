@@ -7,9 +7,11 @@ A SvelteKit / Cloudflare Pages template demonstrating authentication
 ## Features
 
 - Authentication: register, login, logout, forgot password flow
-- Deployed to Cloudflare Pages
-- Uses Cloudflare KV for key/value storage
-- Sends email with MailChannels
+- Signed JWT stored as cookie
+- Deployed to [Cloudflare Pages](https://pages.cloudflare.com/)
+- Uses [Cloudflare KV](https://www.cloudflare.com/products/workers-kv/) for key/value storage
+- Sends email with [MailChannels](https://blog.cloudflare.com/sending-email-from-workers-with-mailchannels/)
+- Validation using [zod](https://github.com/colinhacks/zod)
 
 ## Commands:
 
