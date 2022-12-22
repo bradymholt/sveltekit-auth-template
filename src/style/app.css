@@ -1,28 +1,21 @@
 @import "./minireset.css";
+@import "./fonts.css";
+@import "./forms.css";
 
 :root {
-  --font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  --font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   --background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
-  --max-width: 1024px;
+  --primary-color: #3e8ed0;
+  --error-color: #e53e3e;
+  --max-width-large: 1024px;
 }
 
 body {
   font-family: var(--font-family);
   background: var(--background);
   color: #ffffff;
-  font-size: 18px;
-}
-
-header,
-main {
-  max-width: var(--max-width);
-  margin: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-hr {
-  opacity: 0.25;
+  font-size: 16px;
 }
 
 a {
@@ -31,8 +24,9 @@ a {
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 4rem;
 }
 h2 {
   font-size: 1.5rem;
@@ -52,49 +46,20 @@ h6 {
 }
 
 p {
-  line-height: 3rem;
-}
-
-form {
-  input {
-    border-color: #d1d5db;
-    color: #9ca3af;
-    background-color: #f9fafb;
-    border-width: 1px;
-    border-radius: 5px;
-    border-style: solid;
-    padding: 10px;
-    width: 100%;
-
-    &.invalid {
-      border-color: #e53e3e;
-    }
-  }
-
-  span.invalid {
-    color: #e53e3e;
-  }
-
-  h1 {
-    margin-bottom: 10px;
-  }
-
-  label,
-  input,
-  button {
-    margin: 10px 0;
-    display: block;
-  }
+  margin-top: 1.5rem;
+  margin-bottom: 1em;
 }
 
 button {
-  background-color: #2463eb;
+  background-color: var(--primary-color);
   padding: 10px;
-  border-radius: 10px;
-  border-style: solid;
-  border: none;
+  border-radius: 0.5rem;
+  border: solid 1px transparent;
   color: #ffffff;
   width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1rem;
   cursor: pointer;
 
   &:hover {
@@ -102,15 +67,33 @@ button {
   }
 }
 
-.container {
-  padding: 20px;
+svg.icon {
+  fill: #ffffff;
+  padding: 0 5px;
+}
+
+.prominent-box {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #ffffff;
   color: black;
+  padding: 30px 20px;
+  width: 60%;
   margin: 0 auto;
 
-  a {
-    color: #0000ee;
+  h1 {
+    margin-bottom: 10px;
   }
+
+  a {
+    color: var(--primary-color);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+img {
+  align-self: center;
 }

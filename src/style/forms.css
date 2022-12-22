@@ -1,0 +1,27 @@
+form {
+  label,
+  input,
+  button {
+    margin: 10px 0;
+    display: block;
+  }
+
+  input {
+    border-color: #d1d5db;
+    color: #9ca3af;
+    background-color: #f9fafb;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px;
+    width: 100%;
+
+    &.invalid {
+      border-color: var(--error-color);
+    }
+  }
+
+  span.invalid {
+    color: var(--error-color);
+  }
+}

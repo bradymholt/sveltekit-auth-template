@@ -4,28 +4,23 @@
   export let data: PageData;
 </script>
 
-<div class="container">
+<form class="prominent-box" method="POST">
   {#if !data.tokenValid}
     <p>Invalid link!</p>
   {:else}
     <h2>Reset Password</h2>
-    <form method="POST">
-      <label for="password">New Password</label>
-      <input
-        type="password"
-        class:invalid={form?.errors?.password}
-        placeholder="Password"
-        name="password"
-      />
-      <span class="invalid">{form?.errors?.password ?? ""}</span>
-      <input type="hidden" name="token" value={data.token} />
-      <button type="submit">Reset Password</button>
-    </form>
+    <label for="password">New Password</label>
+    <input
+      type="password"
+      class:invalid={form?.errors?.password}
+      placeholder="Password"
+      name="password"
+    />
+    <span class="invalid">{form?.errors?.password ?? ""}</span>
+    <input type="hidden" name="token" value={data.token} />
+    <button type="submit">Reset Password</button>
   {/if}
-</div>
+</form>
 
-<style lang="postcss">
-  .container {
-    max-width: 450px;
-  }
+<style>
 </style>
