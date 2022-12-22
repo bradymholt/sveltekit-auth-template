@@ -6,6 +6,7 @@ A SvelteKit / Cloudflare Pages template demonstrating authentication
 
 - `npm run deploy` - Deploy to Cloudflare Pages
 - `npm run logs` - Tail Cloudflare Worker logs from latest production deployment
+- `wrangler pages project create sveltekit-auth-template` - Create Pages project
 
 ## Reference
 
